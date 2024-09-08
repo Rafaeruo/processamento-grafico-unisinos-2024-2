@@ -14,7 +14,7 @@
 using namespace std;
 
 // GLAD
-#include "include/glad/glad.h"
+#include "../deps/include/glad/glad.h"
 
 // GLFW
 #include <GLFW/glfw3.h>
