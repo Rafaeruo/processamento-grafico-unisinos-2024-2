@@ -1,0 +1,18 @@
+Respostas dos exercícios 1 até 4:
+
+1. O que é a GLSL? Quais os dois tipos de shaders são obrigatórios no pipeline programável da versão atual que trabalhamos em aula e o que eles processam? 
+GLSL (OpenGL Shading Language) é a linguagem de programação utilizada em programas de shaders no OpenGL, que são executados por uma GPU. 
+
+Há quatro tipos de shaders na pipeline programável do OpenGL: Vertex, Tesselation, Geometry e Fragment shaders. Apenas Vertex e Fragment shaders são obrigatórios.
+- Vertex shaders: processam os vértices. Um vertex shader será executado para cada vértice individualmente.
+- Fragment shaders: processam os fragmentos. Um fragment shader será executado para cada fragmento individualmente.
+
+2. O que são primitivas gráficas? Como fazemos o armazenamento dos vértices na OpenGL?
+Na computação gráfica, primitivas gráficas são informações a partir das quais são definidas as formas de objetos de uma determinada cena. Ex.: vértices, arestas e faces/polígonos.
+No OpenGL, vértices são armazenados em buffers chamados VBOs (Vertex Buffer Object), que são armazenados na memória da GPU.
+
+3. Explique o que é VBO, VAO e EBO, e como se relacionam.
+- VBO (Vertex Buffer Object): buffers que armazenam informações (atributos) sobre vértices, como suas posições e cores, por exemplo. Estes dados são armazenados na memória da GPU.
+- VAO: (Vertex Array Object): as informações sober um vértice são separadas em atributos no VBO. O VAO faz a ligação destes atributos, definindo o formato e 
+a localização dos dados de um VBO através de offsets e strides, com ponteiros para o VBO.
+- EBO (Element Buffer Object): armazena indíces relativos aos vértices, com o intuito de permitir a reutilização de vértices em um desenho sem repetir os mesmos na VBO.
