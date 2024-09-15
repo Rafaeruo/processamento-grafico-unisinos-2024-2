@@ -1,0 +1,5 @@
+Utilizando a câmera 2D do exercício anterior, desenhe algo na tela. O que acontece quando posicionamos os objetos? Por que é útil essa configuração?
+
+Ao desenhar objetos em tela com a configuração de câmera do exercício 2, o tamanho dos objetos em pixels é exatamente o tamanho entre os vértices no plano 2D. 
+Isto ocorre devido ao fato dos valores configurados no exercício anterior corresponderem ao tamanho exato da janela em pixels (800x600). Esta configuração é útil
+porque torna fácil relacionar o tamanho de objetos com seus vértices, além de seguir o padrão de a origem (0, 0) se dar no canto superior esquerdo, ao invés do centro da tela.
